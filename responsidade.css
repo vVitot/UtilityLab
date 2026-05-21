@@ -161,6 +161,11 @@
         padding: 0 10% 0 10%;
     }
 
+    .caixaFiltros{
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu-lateral {
         position: fixed;
         top: 0;
@@ -169,14 +174,14 @@
         /* Ocupa boa parte da tela lateral */
         max-width: 18rem;
         /* Limite para telas ligeiramente maiores */
-        height: 20%;
+        height: 30%;
         background-color: #000000;
         /* Cor de fundo do menu */
         z-index: 1000;
         padding: 1rem;
         box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.5);
         /* Permite rolar a lista se houver muitos itens */
-
+        overflow-y: auto;
         /* O SEGREDO: Esconde o menu para a esquerda fora da tela */
         transform: translateX(-101%);
         transition: transform 0.3s ease-in-out;
@@ -195,8 +200,8 @@
         color: #9b9b9b;
         font-size: 2em;
         cursor: pointer;
-        margin-left: auto;
-        margin-bottom: 7.3rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
     }
 
     /* Fundo escuro atrás do menu aberto */
@@ -207,7 +212,7 @@
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.6);
-        z-index: 999;
+        z-index: 1000;
         display: none;
     }
 
