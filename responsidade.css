@@ -169,7 +169,7 @@
         /* Ocupa boa parte da tela lateral */
         max-width: 18rem;
         /* Limite para telas ligeiramente maiores */
-        height: 50%;
+        height: 20%;
         background-color: #121214;
         /* Cor de fundo do menu */
         z-index: 1000;
@@ -194,10 +194,10 @@
         background: none;
         border: none;
         color: #9b9b9b;
-        font-size: 2rem;
+        font-size: 2em;
         cursor: pointer;
         margin-left: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
     }
 
     /* Fundo escuro atrás do menu aberto */
