@@ -170,16 +170,15 @@
         max-width: 18rem;
         /* Limite para telas ligeiramente maiores */
         height: 20%;
-        background-color: #121214;
+        background-color: #000000;
         /* Cor de fundo do menu */
         z-index: 1000;
         padding: 1rem;
         box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.5);
-        overflow-y: auto;
         /* Permite rolar a lista se houver muitos itens */
 
         /* O SEGREDO: Esconde o menu para a esquerda fora da tela */
-        transform: translateX(-100%);
+        transform: translateX(-101%);
         transition: transform 0.3s ease-in-out;
     }
 
@@ -197,7 +196,7 @@
         font-size: 2em;
         cursor: pointer;
         margin-left: auto;
-        margin-bottom: 5rem;
+        margin-bottom: 7.3rem;
     }
 
     /* Fundo escuro atrás do menu aberto */
