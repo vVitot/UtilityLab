@@ -1,0 +1,277 @@
+.navbarMaps{
+    padding: 0 15% 0 15%;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+
+.logo {
+    width: 5em;
+}
+
+.logoEnome{
+    display: flex;
+    align-items: center;
+}
+
+.botaoVoltar {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: auto;
+    font-family: var(--font-principal);
+    transition: color 0.20s ease-out;
+    color: white;
+}
+
+.botaoVoltar:hover {
+    color: var(--cor-tema);
+}
+
+.nameMap {
+    margin-left: 0.2em;
+    color: aliceblue;
+    font-family: var(--font-principal);
+}
+
+.main-mirage {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image:
+        url(assets/wallpapers/mirage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.conteiner-geral {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.3em 0.3em 0 0.3em;
+    gap: 0.5em;
+    min-height: 0;
+}
+
+
+.coluna-itens {
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.400));
+    /* 1. Define a largura e altura da coluna */
+    width: 100%;
+    height: 93%;
+    /* 2. Ativa a rolagem vertical apenas quando necessário */
+    overflow-y: auto;
+
+    /* 3. Estética (opcional) */
+    border: 2px solid var(--cor-tema);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+    min-height: 0;
+}
+
+.colunaFiltros {
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.900));
+    text-align: center;
+    font-family: var(--font-principal);
+    border: solid 2px var(--cor-tema);
+    width: 27%;
+    height: 98%;
+    margin: 0.3em 0.3em 0 0.3em;
+    min-width: 0;
+    min-height: 0;
+}
+
+.filtrosColum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+}
+
+.caixaFiltros {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-filtrar {
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    background: linear-gradient(180deg, var(--cor-tema) 0%,
+            rgba(59, 59, 59, 0) 100%);
+
+}
+
+.filtro {
+    padding: 0.2em;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    transition: box-shadow 0.20s ease-out;
+    background: var(--roxo-pricipal);
+    border-radius: 0.3em;
+    min-height: 6em;
+}
+
+.item:hover,
+.item.active {
+    box-shadow: 0em 0em 0.2em 0.2em var(--cor-tema);
+}
+
+.item-infos-tr,
+.item-infos-ct {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-right: solid 1px var(--cor-tema);
+    width: 50%;
+    border-radius: 0.3em 0 0 0.3em;
+    background-repeat: no-repeat;
+
+    background-size: contain;
+}
+
+.item-infos-tr {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url('assets/agentetr.png');
+    background-position: -27%;
+
+}
+
+.item-infos-ct {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url('assets/agentect.png');
+    background-position: -18%;
+}
+
+.item-img {
+    height: auto;
+    width: 50%;
+    border-radius: 0 0.3em 0.3em 0;
+    object-fit: cover;
+}
+
+/* Largura da barra */
+.coluna-itens::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Fundo da barra */
+.coluna-itens::-webkit-scrollbar-track {
+    background: var(--cor-tema);
+}
+
+/* O "pegador" da barra */
+.coluna-itens::-webkit-scrollbar-thumb {
+    background: #505050;
+    border-radius: 10px;
+}
+
+.pesquisa {
+    color: rgb(131, 131, 131);
+    border-radius: 10px;
+    width: 100%;
+    height: 2.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* Começa bem escuro no topo e clareia levemente no fundo */
+    background: linear-gradient(180deg, #15161a 0%, #1e2026 100%);
+    border: 3px solid #2d3139;
+    border-radius: 8px;
+    color: #fff;
+    /* Sombra interna para marcar o topo do "buraco" */
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.pesquisa::placeholder {
+    text-align: center;
+    color: rgb(139, 139, 139);
+}
+
+.pesquisa:focus {
+    border: 3px solid var(--cor-tema);
+}
+
+.exibicao {
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.900));
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    display: flex;
+    flex-direction: column;
+    margin: 0.3em 0.3em 0 0.3em;
+    width: 75%;
+    height: 98%;
+    border: solid 2px var(--cor-tema);
+    gap: 0.5em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exibicao-imagens {
+    height: 50%;
+    justify-content: center;
+    display: flex;
+    gap: 0.5em;
+}
+
+.exibicaoPixel {
+    width: 50%;
+    height: 100%;
+    border: solid 2px var(--cor-tema);
+    border-radius: 10px;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.exibicaoComandos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+    border: solid 2px var(--cor-tema);
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+.exibicaoVideo {
+    height: 100%;
+    border-radius: 10px;
+    border: solid 2px var(--cor-tema);
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.comandosMouse {
+    width: 15%;
+}
+
+.caixa {
+    display: flex;
+    width: 70%;
+    min-height: 0;
+}

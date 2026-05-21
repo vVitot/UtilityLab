@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UtilityLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button class="botao-menu" id="btn-abrir-menu" aria-label="Abrir menu">
+            <!-- Ícone clássico de 3 barrinhas (Hambúrguer) -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="logo">Táticas CS</div>
+        <div class="navbarMaps">
+            <div class="logoEnome">
+                <img class="logo" src="assets/MapIcons/mirage.png" alt="" style="padding: 0.3em;">
+                <h2 class="nameMap">MIRAGE</h2>
+            </div>
+            <a href="index.html" style="text-decoration: none;">
+                <h1 class="botaoVoltar" alt="">VOLTAR</h1>
+            </a>
+        </div>
+    </header>
+    <main class="main-mirage">
+        <div class="conteiner-geral">
+            <input class="pesquisa" id="pesquisa-smoke" type="text" placeholder="Pesquise aqui">
+            <ul class="coluna-itens">
+                <li class="item" data-index="1" data-comando="1" data-local="meio" data-time="tr">
+                    <div class="item-infos">
+                        <p>Janelão</p>
+                        <p style="color: #9b9b9b;">Local: <span style="color: var(--cor-card-meio);">Meio</span> </p>
+                    </div>
+                    <img class="item-img" alt="">
+                </li>
+                <li class="item" data-index="2" data-comando="1" data-local="meio" data-time="tr">
+                    <div class="item-infos">
+                        <p>Ligação</p>
+                        <p style="color: #9b9b9b;">Local: <span style="color: var(--cor-card-meio);">Meio</span> </p>
+                    </div>
+                    <img class="item-img" alt="">
+                </li>
+                <li class="item" data-index="3" data-comando="1" data-local="meio" data-time="tr">
+                    <div class="item-infos">
+                        <p>L</p>
+                        <p style="color: #9b9b9b;">Local: <span style="color: var(--cor-card-meio)">Meio</span> </p>
+                    </div>
+                    <img class="item-img" alt="">
+                </li>
+                <li class="item" data-index="4" data-comando="1" data-local="bomb-a" data-time="tr">
+                    <div class="item-infos">
+                        <p>CT</p>
+                        <p style="color: #9b9b9b;">Local: <span style="color: var(--cor-card-bombA)">Bomb A</span> </p>
+                    </div>
+                    <img class="item-img" alt="">
+                </li>
+                
+            </ul>
+        </div>
+        <div class="overlay" id="overlay-menu"></div>
+        <div class="caixa">
+            <div class="colunaFiltros menu-lateral" id="menu-lateral">
+                <button class="botao-fechar" id="btn-fechar-menu">&times;</button>
+                <h2 class="titulo-filtrar"><span
+                        style="font-family: var(--font-principal); font-size: 0.6em; color: aliceblue;">Filtrar:</span>
+                </h2>
+
+                <dif class="caixaFiltros">
+                    <div class="filtrosColum">
+                        <div class="filtro">
+                            <p>Todos</p>
+                            <label class="switch">
+                                <input type="checkbox" checked id="filtro-todos">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filtro">
+                            <p>CT</p>
+                            <label class="switch">
+                                <input type="checkbox" class="filtro-time" value="ct">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filtro">
+                            <p>TR</p>
+                            <label class="switch">
+                                <input type="checkbox" class="filtro-time" value="tr">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filtrosColum">
+                        <div class="filtro">
+                            <p style="color: var(--cor-card-bombA);">Bomb A</p>
+                            <label class="switch">
+                                <input type="checkbox" class="filtro-local" value="bomb-a">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filtro">
+                            <p style="color: var(--cor-card-bombB);">Bomb B</p>
+                            <label class="switch">
+                                <input type="checkbox" class="filtro-local" value="bomb-b">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filtro">
+                            <p style="color: var(--cor-card-meio);">Meio</p>
+                            <label class="switch">
+                                <input type="checkbox" class="filtro-local" value="meio">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="exibicao" data-exibicao>
+                <div class="exibicao-imagens" data-exibicao-imagens>
+                    <img data-pixel class="" src="" alt="">
+                    <div data-comandos>
+
+                    </div>
+                </div>
+                <video data-video src=""></video>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <script src="script.js" defer>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sarala:wght@400;700&display=swap');
+@import url(checkbox.css);
+@import url(paginaTreino.css);
+@import url(responsidade.css);
+:root{
+    --cor-tema: #41b6ac;
+    --font-principal: Nunito, Roboto, sans-serif;
+    --cor-card-bombA: rgb(91, 255, 118);
+    --cor-card-bombB: rgb(255, 90, 90);
+    --cor-card-meio: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+header {
+    background: linear-gradient(90deg, #0b0f19 50%, var(--cor-tema) 150%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-family: var(--font-principal);
+    font-size: 2em;
+    line-height: 0.9em;
+}
+
+
+.navbar {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.namePage{
+    color: white;
+    font-family: var(--font-principal);
+    font-size: 3em;
+}
+
+.main-Inicial {
+    height: 100%;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(48, 45, 45) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectmaps {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1em;
+}
+
+.cardmap {
+    width: 14em;
+    height: 14em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(59, 59, 59, 0.822);
+    overflow: hidden;
+    transition: box-shadow 0.17s ease-out;
+}
+
+.cardmap:hover {
+    box-shadow: 0px 0px 5px 5px var(--cor-tema);
+}
+
+.linkmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.17s ease-out;
+}
+
+.linkmap:hover {
+    display: flex;
+    background: linear-gradient(10deg, rgb(17, 17, 17) 0%, rgba(59, 59, 59, 0.822) 100%);
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1)
+}
+
+.imgmap {
+    width: 80%;
+}
+
+footer {
+    background: linear-gradient(10deg, rgb(17, 17, 17) 0%, rgba(59, 59, 59, 0.822) 100%);
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid rgb(92, 92, 92) 1px;
+    flex-direction: column;
+}
+
+p {
+    color: white;
+    font-family: var(--font-principal);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.meu-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1e1e24; /* Ajuste para a cor do seu site */
+  color: #fff;
+  gap: 1rem;
+}
+
+/* Estilização do Botão Hambúrguer */
+.botao-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.75rem;
+  height: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.botao-menu span {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}

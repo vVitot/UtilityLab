@@ -1,0 +1,245 @@
+@media(max-width: 1573px){
+    .selectmaps{
+        min-width: 75.1%;
+    }
+}
+
+@media (max-width: 1393px) {
+    .main-mirage {
+        background-image: url(assets/wallpapers/mirage.jpg);
+        background-size: cover;
+    }
+
+    
+}
+
+@media (max-width: 1260px) {
+    
+    .selectmaps{
+        min-width: 93%;
+    }
+    .conteiner-geral {
+        width: 30%;
+        height: 98%;
+    }
+
+    .caixa {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        width: 55%;
+    }
+
+    .colunaFiltros {
+        height: 18%;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .exibicao-imagens {
+        justify-content: center;
+        height: 30%;
+        display: flex;
+        gap: 0.5em;
+        object-fit: cover;
+    }
+
+    .coluna-itens {
+        height: 100%;
+    }
+
+    .exibicao {
+        object-fit: cover;
+        width: 100%;
+        height: 79.2%;
+    }
+
+    .caixaFiltros {
+        padding-bottom: 1%;
+        align-items: end;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .titulo-filtrar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .exibicaoVideo {
+        width: 100%;
+        max-height: 70%;
+    }
+
+    .item {
+        min-height: 11%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .conteiner-geral{
+        width: 100%;
+        height: 70%;
+        margin-bottom: 3em;
+    }
+
+    .pesquisa{
+        min-height: 3em ;
+    }
+
+    .selectmaps{
+        min-width: 100%;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .main-Inicial{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .coluna-itens{
+        min-height: 100%;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .item{
+        min-height: 30%;
+    }
+
+    .caixa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+    }
+
+    .exibicao{
+        height: 100%;
+    }
+
+    .main-mirage{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .cardmap{
+        max-width: 15em;
+        max-height: 15em;
+    }
+
+    .titulo{
+        padding: 1em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbarMaps {
+        height: 3em;
+        font-size: 0.8em;
+        padding: 0 10% 0 10%;
+    }
+
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        /* Ocupa boa parte da tela lateral */
+        max-width: 18rem;
+        /* Limite para telas ligeiramente maiores */
+        height: 100vh;
+        background-color: #121214;
+        /* Cor de fundo do menu */
+        z-index: 1000;
+        padding: 1rem;
+        box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
+        /* Permite rolar a lista se houver muitos itens */
+
+        /* O SEGREDO: Esconde o menu para a esquerda fora da tela */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Quando o JavaScript injetar essa classe, o menu aparece */
+    .menu-lateral.ativo {
+        transform: translateX(0);
+    }
+
+    /* Botão X para fechar o menu no mobile */
+    .botao-fechar {
+        display: block;
+        background: none;
+        border: none;
+        color: #9b9b9b;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: auto;
+        margin-bottom: 1rem;
+    }
+
+    /* Fundo escuro atrás do menu aberto */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay.ativo {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* No PC, sumimos com os botões de abrir/fechar e o overlay */
+    .botao-menu,
+    .botao-fechar,
+    .overlay {
+        display: none !important;
+    }
+
+    /* A lista volta a ser uma barra lateral fixa normal integrada ao design */
+    .menu-lateral {
+        position: relative;
+        transform: none;
+        /* Anula o efeito de estar escondido */
+        width: 20rem;
+        height: auto;
+        box-shadow: none;
+
+    }
+
+    /* Se você usa uma estrutura flex ou grid na página, o menu-lateral 
+     vai ficar perfeitamente alinhado ao lado do conteúdo principal */
+
+}
+
+/* Estilos básicos para a lista se manter limpa */
