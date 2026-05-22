@@ -46,7 +46,7 @@ function mostrarItem(indice, comandoId) {
   const video = document.querySelector('[data-video]')
 
   imgPixel.src = `assets/img_pixel/p${indice}.png`
-  video.src = `movies/v${indice}.mp4`
+  video.src = `https://res.cloudinary.com/dmuatihuc/video/upload/v1779410051/0521_1_tpnocs.mp4`
   video.autoplay = true;
   video.loop = true;
   video.muted = true;
@@ -192,3 +192,5 @@ function fecharMenu() {
 btnAbrir.addEventListener('click', abrirMenu);
 btnFechar.addEventListener('click', fecharMenu);
 overlay.addEventListener('click', fecharMenu);
+
+
