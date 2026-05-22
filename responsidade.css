@@ -129,12 +129,12 @@
         align-items: center;
         padding: 1em;
         overflow-y: auto;
-        max-height: 100vh ;
+        max-height: 100vh;
     }
 
     .coluna-itens {
         min-height: 100%;
-        padding: 0.5em 1em 0.5em 1em;
+        padding: 0.5em;
     }
 
     .item {
@@ -167,86 +167,83 @@
         width: 100%;
     }
 
+    .cardmap {
+        max-width: 15em;
+        max-height: 15em;
+    }
 
-}
+    .titulo {
+        padding: 1em;
+    }
 
+    .logo {
+        display: none;
+    }
 
-.cardmap {
-    max-width: 15em;
-    max-height: 15em;
-}
+    .navbarMaps {
+        height: 3em;
+        font-size: 0.8em;
+        padding: 0 10% 0 10%;
+    }
 
-.titulo {
-    padding: 1em;
-}
+    .caixaFiltros {
+        display: flex;
+        flex-direction: column;
+    }
 
-.logo {
-    display: none;
-}
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        /* Ocupa boa parte da tela lateral */
+        max-width: 18rem;
+        /* Limite para telas ligeiramente maiores */
+        height: 30%;
+        background-color: #000000;
+        /* Cor de fundo do menu */
+        z-index: 1000;
+        padding: 1rem;
+        box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.5);
+        /* Permite rolar a lista se houver muitos itens */
+        overflow-y: auto;
+        /* O SEGREDO: Esconde o menu para a esquerda fora da tela */
+        transform: translateX(-101%);
+        transition: transform 0.3s ease-in-out;
+    }
 
-.navbarMaps {
-    height: 3em;
-    font-size: 0.8em;
-    padding: 0 10% 0 10%;
-}
+    /* Quando o JavaScript injetar essa classe, o menu aparece */
+    .menu-lateral.ativo {
+        transform: translateX(0);
+    }
 
-.caixaFiltros {
-    display: flex;
-    flex-direction: column;
-}
+    /* Botão X para fechar o menu no mobile */
+    .botao-fechar {
+        display: block;
+        background: none;
+        border: none;
+        color: #9b9b9b;
+        font-size: 2em;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
 
-.menu-lateral {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80%;
-    /* Ocupa boa parte da tela lateral */
-    max-width: 18rem;
-    /* Limite para telas ligeiramente maiores */
-    height: 30%;
-    background-color: #000000;
-    /* Cor de fundo do menu */
-    z-index: 1000;
-    padding: 1rem;
-    box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.5);
-    /* Permite rolar a lista se houver muitos itens */
-    overflow-y: auto;
-    /* O SEGREDO: Esconde o menu para a esquerda fora da tela */
-    transform: translateX(-101%);
-    transition: transform 0.3s ease-in-out;
-}
+    /* Fundo escuro atrás do menu aberto */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+        display: none;
+    }
 
-/* Quando o JavaScript injetar essa classe, o menu aparece */
-.menu-lateral.ativo {
-    transform: translateX(0);
-}
-
-/* Botão X para fechar o menu no mobile */
-.botao-fechar {
-    display: block;
-    background: none;
-    border: none;
-    color: #9b9b9b;
-    font-size: 2em;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-}
-
-/* Fundo escuro atrás do menu aberto */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
-    display: none;
-}
-
-.overlay.ativo {
-    display: block;
+    .overlay.ativo {
+        display: block;
+    }
 }
 
 
