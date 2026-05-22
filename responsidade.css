@@ -127,7 +127,7 @@
         flex-direction: column;
         gap: 0.3em;
         align-items: center;
-        padding: 1em;
+        padding: 0 0.5em 0 0.5em;
         overflow-y: auto;
         max-height: 100vh;
     }
@@ -189,6 +189,7 @@
     .caixaFiltros {
         display: flex;
         flex-direction: column;
+        padding-bottom: 1em;
     }
 
     .menu-lateral {
@@ -197,8 +198,9 @@
         left: 0;
         width: 60%;
         max-width: 18rem;
+        min-width: 13em;
         /* Limite para telas ligeiramente maiores */
-        min-height: 14em;
+        min-height: 16em;
         max-height: 14em;
         background-color: #000000;
         /* Cor de fundo do menu */
@@ -226,6 +228,7 @@
         font-size: 2em;
         cursor: pointer;
         margin-right: 1rem;
+        margin-bottom: 0.5em;
         z-index: 1000;
     }
 
