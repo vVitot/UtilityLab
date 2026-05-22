@@ -92,12 +92,13 @@
 
 @media (max-width: 768px) {
     body {
-        overflow: auto;
+        height: auto !important;
+        overflow-y: auto;
     }
 
     .conteiner-geral {
         width: 100%;
-        height: 70%;
+        height: auto;
         margin-bottom: 3em;
     }
 
@@ -122,30 +123,30 @@
     }
 
     .main-mirage {
-        height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 0.3em;
+        gap: 1em;
         align-items: center;
-        padding: 0 0.5em 0 0.5em;
-        overflow-y: auto;
-        max-height: 100vh;
+        padding: 0.5em;
+        height: auto;
     }
 
     .coluna-itens {
-        min-height: 100%;
+        max-height: 50vh;
         padding: 0.5em;
     }
 
     .item {
-        min-height: 30%;
+        flex-shrink: 0;
+        /* Impede o flexbox de esmagar o item */
+        min-height: auto;
     }
 
     .caixa {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
@@ -154,7 +155,7 @@
     }
 
     .exibicao {
-        height: 100%;
+        height: auto;
         flex-direction: column-reverse;
     }
 
