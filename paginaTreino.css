@@ -173,20 +173,18 @@
 /* Largura da barra */
 .coluna-itens::-webkit-scrollbar {
     width: 8px;
-    
 }
 
 /* Fundo da barra */
 .coluna-itens::-webkit-scrollbar-track {
     background: var(--cor-tema);
-    
+    border-radius: 3px;
 }
 
 /* O "pegador" da barra */
 .coluna-itens::-webkit-scrollbar-thumb {
     background: #505050;
     border-radius: 10px;
-    
 }
 
 .pesquisa {
