@@ -195,11 +195,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 80%;
-        /* Ocupa boa parte da tela lateral */
+        width: 60%;
         max-width: 18rem;
         /* Limite para telas ligeiramente maiores */
-        height: 30%;
+        min-height: 14em;
+        max-height: 14em;
         background-color: #000000;
         /* Cor de fundo do menu */
         z-index: 1000;
@@ -225,8 +225,8 @@
         color: #9b9b9b;
         font-size: 2em;
         cursor: pointer;
-        margin-bottom: 2rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        z-index: 1000;
     }
 
     /* Fundo escuro atrás do menu aberto */
