@@ -198,5 +198,3 @@ function fecharMenu() {
 btnAbrir.addEventListener('click', abrirMenu);
 btnFechar.addEventListener('click', fecharMenu);
 overlay.addEventListener('click', fecharMenu);
-
-

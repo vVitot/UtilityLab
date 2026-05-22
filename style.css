@@ -3,7 +3,7 @@
 @import url(paginaTreino.css);
 @import url(responsidade.css);
 :root{
-    --cor-tema: #41b6ac;
+    --cor-tema: #00b4a5;
     --font-principal: Nunito, Roboto, sans-serif;
     --cor-card-bombA: rgb(91, 255, 118);
     --cor-card-bombB: rgb(255, 90, 90);
@@ -144,9 +144,10 @@ p {
 }
 
 .botao-menu span {
+margin-left: 3px;
   width: 100%;
   height: 0.2rem;
-  background-color: #fff;
+  background-color: var(--cor-tema);
   border-radius: 2px;
   transition: 0.3s;
 }
