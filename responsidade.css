@@ -99,7 +99,6 @@
     .conteiner-geral {
         width: 100%;
         height: auto;
-        margin-bottom: 3em;
     }
 
     .pesquisa {
@@ -125,7 +124,7 @@
     .main-mirage {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0.5em;
         align-items: center;
         padding: 0.5em;
         height: auto;
@@ -133,6 +132,7 @@
 
     .coluna-itens {
         max-height: 50vh;
+        min-height: 50vh;
         padding: 0.5em;
     }
 
