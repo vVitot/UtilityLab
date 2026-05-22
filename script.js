@@ -46,8 +46,8 @@ function mostrarItem(indice, comandoId) {
   const video = document.querySelector('[data-video]')
 
   const urlVideo = 
-  /*1-janelão*/['https://res.cloudinary.com/dmuatihuc/video/upload/v1779410051/0521_1_tpnocs.mp4', 
-  /*2-ligação*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779482873/liga%C3%A7%C3%A3o_ke5wi7.mp4',
+  /*1-janelão*/['https://res.cloudinary.com/dmuatihuc/video/upload/v1779483755/v1_wquafm.mp4', 
+  /*2-ligação*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779483754/v2_pyxhjx.mp4',
   /*3-L*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484373/v3_l2fdz8.mp4',
   /*4-CT*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484743/ct_pfgifc.mp4']
    
