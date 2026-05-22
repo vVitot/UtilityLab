@@ -131,8 +131,8 @@
     }
 
     .coluna-itens {
-        max-height: 50vh;
-        min-height: 50vh;
+        max-height: 40vh;
+        min-height: 40vh;
         padding: 0.5em;
     }
 
