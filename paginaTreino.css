@@ -36,6 +36,7 @@
 }
 
 .main-mirage {
+    padding: 0.5em;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -48,7 +49,7 @@
 }
 
 .conteiner-geral {
-    height: 100%;
+    height: 99%;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -75,7 +76,7 @@
     gap: 0.5em;
     padding: 0.5em;
     min-height: 0;
-    box-shadow: 0em 0.1em 0.3em 0.2em rgb(37, 37, 37);
+    box-shadow: 0em 0.1em 0.3em 0.1em rgb(37, 37, 37);
 }
 
 .colunaFiltros {
@@ -85,10 +86,11 @@
     font-family: var(--font-principal);
     border: solid 2px var(--cor-tema);
     width: 27%;
-    height: 98%;
+    height: 100%;
     margin: 0.3em 0.3em 0 0.3em;
     min-width: 0;
     min-height: 0;
+    box-shadow: 0em 0.1em 0.3em 0.1em rgb(37, 37, 37) !important;
 }
 
 .filtrosColum {
@@ -224,12 +226,12 @@
     flex-direction: column;
     margin: 0.3em 0.3em 0 0.3em;
     width: 75%;
-    height: 98%;
+    height:99.2%;
     border: solid 2px var(--cor-tema);
     gap: 0.5em;
     max-width: 100%;
     max-height: 100%;
-    box-shadow: 0em 0.1em 0.3em 0.2em rgb(37, 37, 37);
+    box-shadow: 0em 0.1em 0.3em 0.1em rgb(37, 37, 37);
 }
 
 .exibicao-imagens {
@@ -275,9 +277,9 @@
 }
 
 .caixa {
+    height: 100%;
     display: flex;
     width: 70%;
-    min-height: 0;
 }
 
 
@@ -290,5 +292,5 @@
     margin-top: -19px;
     width: 20%;
     height: 1.5em;
-    box-shadow: 0em 0.1em 0.3em 0.2em rgb(37, 37, 37);
+    box-shadow: 0em 0.1em 0.3em 0.1em rgb(37, 37, 37);
 }
