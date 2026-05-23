@@ -129,11 +129,11 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0.5em;
-        height: 110vh;
+        height: 140vh;
     }
 
     .coluna-itens {
-        height: 40vh;
+        height: 50%;
         padding: 0 !important;
         gap: 0;
         transition: height 0.3s ease-in-out;
