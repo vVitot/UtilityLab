@@ -134,7 +134,8 @@
 
     .coluna-itens {
         height: 40vh;
-        padding: 0.5em;
+        padding: 0 !important;
+        gap: 0;
         transition: height 0.3s ease-in-out;
     }
 
@@ -142,6 +143,7 @@
         flex-shrink: 0;
         /* Impede o flexbox de esmagar o item */
         min-height: auto;
+        margin: 0.5em 0.5em 0 0.5em;
     }
 
     .caixa {
