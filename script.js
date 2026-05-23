@@ -24,7 +24,7 @@ itens.forEach(item => {
 
   // 2. Adiciona o evento de clique em cada uma delas
   item.addEventListener('click', (evento) => {
-
+    
     // Captura o número do data-index (convertendo para número com Number())
     const numero = Number(evento.currentTarget.dataset.index);
 
@@ -38,6 +38,7 @@ itens.forEach(item => {
 
 // Atualizada para receber o comandoId como segundo parâmetro
 function mostrarItem(indice, comandoId) {
+  abreFecha();
   const exibicaoImagens = document.querySelector('[data-exibicao-imagens]')
   const exibicao = document.querySelector('[data-exibicao]')
 
@@ -214,16 +215,17 @@ const tamanhoB = '0vh';
 minhaDiv.style.height = tamanhoA;
 
 // 4. Escuta o clique do botão
-botao.addEventListener('click', () => {
-  
+function abreFecha() {
   // Se a altura atual for igual ao tamanho A, muda para o B
   if (minhaDiv.style.height === tamanhoA) {
     minhaDiv.style.height = tamanhoB;
-    minhaDiv.style.padding='0px'
+    minhaDiv.style.padding = '0px';
   } else {
     // Se não for (ou seja, se for o B), volta para o A
     minhaDiv.style.height = tamanhoA;
-    minhaDiv.style.padding='0.5em'
+    minhaDiv.style.padding = '0.5em';
   }
-  
-});
+}
+
+// 2. Passe APENAS O NOME da função para o escutador (sem os parênteses)
+botao.addEventListener('click', abreFecha);
