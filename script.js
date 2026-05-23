@@ -5,7 +5,7 @@ itens.forEach(item => {
   const numeros = item.dataset.index
   const itemImg = item.querySelector('.item-img')
 
-  itemImg.src=`assets/img_preview/i${numeros}.jpg`
+  itemImg.src = `assets/img_preview/i${numeros}.jpg`
 })
 
 itens.forEach(item => {
@@ -45,14 +45,14 @@ function mostrarItem(indice, comandoId) {
   const comandos = document.querySelector('[data-comandos]')
   const video = document.querySelector('[data-video]')
 
-  const urlVideo = 
-  /*1-janelão*/['https://res.cloudinary.com/dmuatihuc/video/upload/v1779483755/v1_wquafm.mp4', 
+  const urlVideo =
+  /*1-janelão*/['https://res.cloudinary.com/dmuatihuc/video/upload/v1779483755/v1_wquafm.mp4',
   /*2-ligação*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779483754/v2_pyxhjx.mp4',
   /*3-L*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484373/v3_l2fdz8.mp4',
   /*4-CT*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484743/ct_pfgifc.mp4']
-   
+
   imgPixel.src = `assets/img_pixel/p${indice}.png`
-  video.src = urlVideo[indice-1]
+  video.src = urlVideo[indice - 1]
   video.autoplay = true;
   video.loop = true;
   video.muted = true;
@@ -164,7 +164,7 @@ if (checkTodos) {
       aplicarFiltros();
     }
   });
-} 
+}
 
 const todosFiltros = [...checksLocal, ...checksTime];
 todosFiltros.forEach(checkbox => {
@@ -198,3 +198,30 @@ function fecharMenu() {
 btnAbrir.addEventListener('click', abrirMenu);
 btnFechar.addEventListener('click', fecharMenu);
 overlay.addEventListener('click', fecharMenu);
+
+
+
+
+// 1. Seleciona os elementos da página
+const botao = document.querySelector('#meu-botao');
+const minhaDiv = document.querySelector('#lista-smokes');
+
+// 2. Defina aqui os dois valores que você quer alternar (com a unidade!)
+const tamanhoA = '150px';
+const tamanhoB = '400px';
+
+// 3. Garante que a div comece explicitamente com o tamanho A
+minhaDiv.style.height = tamanhoA;
+
+// 4. Escuta o clique do botão
+botao.addEventListener('click', () => {
+  
+  // Se a altura atual for igual ao tamanho A, muda para o B
+  if (minhaDiv.style.height === tamanhoA) {
+    minhaDiv.style.height = tamanhoB;
+  } else {
+    // Se não for (ou seja, se for o B), volta para o A
+    minhaDiv.style.height = tamanhoA;
+  }
+  
+});
