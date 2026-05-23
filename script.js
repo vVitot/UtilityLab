@@ -208,7 +208,7 @@ const minhaDiv = document.querySelector('#lista-smokes');
 
 // 2. Defina aqui os dois valores que você quer alternar (com a unidade!)
 const tamanhoA = '50vh';
-const tamanhoB = '1vh';
+const tamanhoB = '0vh';
 
 // 3. Garante que a div comece explicitamente com o tamanho A
 minhaDiv.style.height = tamanhoA;
@@ -219,9 +219,11 @@ botao.addEventListener('click', () => {
   // Se a altura atual for igual ao tamanho A, muda para o B
   if (minhaDiv.style.height === tamanhoA) {
     minhaDiv.style.height = tamanhoB;
+    minhaDiv.style.padding='0px'
   } else {
     // Se não for (ou seja, se for o B), volta para o A
     minhaDiv.style.height = tamanhoA;
+    minhaDiv.style.padding='0.5em'
   }
   
 });
