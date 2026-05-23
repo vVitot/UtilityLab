@@ -119,7 +119,7 @@
         text-align: center;
         overflow-y: auto;
         /* Ativa a rolagem apenas na vertical */
-        max-height: 100vh;
+        min-height: 100vh;
     }
 
     .main-mirage {
@@ -129,7 +129,7 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0.5em;
-        height: auto;
+        height: 110vh;
     }
 
     .coluna-itens {
@@ -156,6 +156,7 @@
 
     .exibicao-imagens {
         flex-direction: column-reverse;
+        height: 100%;
     }
 
     .exibicao {
@@ -167,7 +168,9 @@
         width: 100%;
         height: 100%;
     }
-
+    .exibicaoVideo{
+        height: 100%;
+    }
     .exibicaoComandos {
         width: 100%;
     }
