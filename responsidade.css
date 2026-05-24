@@ -125,7 +125,8 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0.5em;
-        height: 140vh;
+        height: auto;
+        min-height: 100vh;
     }
 
     .coluna-itens {
