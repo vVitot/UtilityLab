@@ -51,7 +51,8 @@ function mostrarItem(indice, comandoId) {
   /*2-ligação*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779483754/v2_pyxhjx.mp4',
   /*3-L*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484373/v3_l2fdz8.mp4',
   /*4-CT*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779484743/ct_pfgifc.mp4',
- /*5-cabecinha*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779560995/cabecinha_c5xogd.mp4']
+ /*5-cabecinha*/'https://res.cloudinary.com/dmuatihuc/video/upload/v1779560995/cabecinha_c5xogd.mp4',
+/*6-Janela do mercado */'https://res.cloudinary.com/dmuatihuc/video/upload/v1779651491/0524_b8ofhi.mp4']
 
   imgPixel.src = `assets/img_pixel/p${indice}.png`
   video.src = urlVideo[indice - 1]
