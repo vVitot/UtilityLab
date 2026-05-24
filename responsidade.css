@@ -156,7 +156,7 @@
     }
 
     .exibicao {
-        height: auto;
+        height: 50em;
         flex-direction: column-reverse;
     }
 
@@ -166,11 +166,12 @@
     }
 
     .exibicaoVideo {
-        height: 100%;
+        
     }
 
     .exibicaoComandos {
         width: 100%;
+        border: none;
     }
 
     .cardmap {

@@ -231,3 +231,10 @@ function abreFecha() {
 
 // 2. Passe APENAS O NOME da função para o escutador (sem os parênteses)
 botao.addEventListener('click', abreFecha);
+
+
+const pesquisa = document.querySelector('.pesquisa').addEventListener('click', ()=>{
+  if(minhaDiv.style.height === tamanhoB){
+    minhaDiv.style.height="50vh"
+  }
+})
