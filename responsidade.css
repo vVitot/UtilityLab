@@ -156,7 +156,7 @@
     }
 
     .exibicao {
-        height: 50em;
+        height: auto;
         flex-direction: column-reverse;
     }
 
