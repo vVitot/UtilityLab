@@ -285,7 +285,6 @@
 
 .botaoDescerSubir{
     background-color: #1e2026;
-    color: var(--cor-tema);
     box-shadow: 1em 1em ;
     border: solid 2px var(--cor-tema);
     border-radius: 10px;

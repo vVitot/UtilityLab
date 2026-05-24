@@ -110,6 +110,23 @@
         justify-content: center;
     }
 
+    .navbarMaps {
+        background-image: url(assets/MapIcons/mirage.png);
+        background-size: 7em;
+        margin-left: 1em;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        height: 3em;
+        font-size: 0.9em;
+        padding: 0 7% 0 10%;
+    }
+
+    .nameMap {
+        font-size: ;
+        color: #fff;
+        text-shadow: 0 0 5px var(--cor-tema), 0 0 5px var(--cor-tema), 0 0 30px var(--cor-tema);
+    }
+
     .main-Inicial {
         font-size: 10px;
         text-align: center;
@@ -166,9 +183,7 @@
         height: 100%;
     }
 
-    .exibicaoVideo {
-        
-    }
+    .exibicaoVideo {}
 
     .exibicaoComandos {
         width: 100%;
@@ -186,12 +201,6 @@
 
     .logo {
         display: none;
-    }
-
-    .navbarMaps {
-        height: 3em;
-        font-size: 0.8em;
-        padding: 0 10% 0 10%;
     }
 
     .caixaFiltros {
@@ -259,7 +268,7 @@
 
     .botaoDescerSubir {
         background-color: #1e2026;
-        color: var(--cor-tema);
+        color: rgb(163, 163, 163);
         box-shadow: 1em 1em;
         border: solid 2px var(--cor-tema);
         border-radius: 10px;
@@ -269,12 +278,13 @@
         box-shadow: 0em 0.1em 0.3em 0.2em rgb(37, 37, 37);
     }
 
-    .tamanhoListaAberta{
-        height: 50vh ;
+    .tamanhoListaAberta {
+        height: 50vh;
         padding: 0.5em;
     }
-    .tamanhoListaFechada{
-        height: 0vh ;
+
+    .tamanhoListaFechada {
+        height: 0vh;
         padding: 0px;
     }
 }
@@ -301,9 +311,9 @@
 
     }
 
-    .coluna-itens{
+    .coluna-itens {
         height: 100% !important;
     }
 
-    
+
 }

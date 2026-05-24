@@ -3,7 +3,7 @@
 @import url(paginaTreino.css);
 @import url(responsidade.css);
 :root{
-    --cor-tema: #00b4a5;
+    --cor-tema: #008cff;
     --font-principal: Nunito, Roboto, sans-serif;
     --cor-card-bombA: rgb(91, 255, 118);
     --cor-card-bombB: rgb(255, 90, 90);
